@@ -7,9 +7,7 @@
 c:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.36.32532\bin\Hostx64\x64\
 E:\progs\CMake\bin
 
-
-Запустил cmake (как в инструкции к VoxelEngine: cmake -DCMAKE_BUILD_TYPE=Release -DVOXELENGINE_BUILD_WINDOWS_VCPKG=ON ..)
-При первом запуске CMake должен скачать vcpkg c git`a сам
+Поставил vcpkg: git clone https://github.com/microsoft/vcpkg.git
 Он должен быть в каталоге e:\proj\voxel\VoxelEngine-Cpp\
 
 Затем в каталоге vcpkg запустил .\bootstrap-vcpkg.bat для установки vcpkg
@@ -28,7 +26,8 @@ libpng16.lib
 в e:\proj\voxel\VoxelEngine-Cpp\vcpkg\packages\luajit_x64-windows\
  (VS2022 искал их hpp по luajit там почему-то)
 
-Снова запустил cmake (как в инструкции к VoxelEngine, смотри выше)
+Запустил cmake (как в инструкции к VoxelEngine: cmake -DCMAKE_BUILD_TYPE=Release -DVOXELENGINE_BUILD_WINDOWS_VCPKG=ON ..)
+
 
 Всё равно всё вылетело нафиг. Зато в build появился проект для VS2022
 
